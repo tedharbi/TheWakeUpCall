@@ -1,0 +1,231 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : May 4, 2024, 5:32:15 AM
+    Author     : tedzkie
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
+
+body{
+    margin: 0;
+    background-color: #f4e3b2;
+        font-family: "Raleway", sans-serif;
+
+}
+.containercart{
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+    font-family: "Raleway", sans-serif;
+
+}
+svg{
+    width: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.icon-cart{
+    position: relative;
+}
+.icon-cart span{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+.titlecart a{
+    font-size: xx-large;
+    color: black;
+    text-decoration: none;
+}
+.listProduct .item img{
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  height: 60%; /* Set a fixed height for the images */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+  border-radius: 10%;
+}
+
+.listProduct{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 100px ;
+}
+
+.listProduct .item{
+  background-color: #FDF0D5;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.listProduct .item h2{
+  font-weight: 500;
+  font-size: large;
+  padding-top: 10px;
+}
+.listProduct .item .price{
+  letter-spacing: 7px;
+  font-size: small;
+}
+.listProduct .item button{
+  background-color: #241909;
+  color: #eee;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;  
+  margin-top: auto;
+}
+
+/* cart */
+.cartTab{
+    width: 400px;
+    background-color: #FDF0D5;
+    color: black;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+    font-family: "Raleway", sans-serif;
+
+}
+body.showCart .cartTab{
+    right: 0;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    background-color: black;
+    color: white;
+    padding: 13px;
+    margin: 0px 0px 5px 0px;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .btn button{
+        background-color: black;
+        border: none;
+        font-weight: 500;
+        cursor: pointer;
+        padding: auto;
+        
+}
+ 
+.cartTab .btn .close{
+    background-color: white;
+}
+.cartTab .btn .checkOut{
+    color: #eee;
+
+}
+
+
+.btn button {
+        font-family: "Raleway", sans-serif;
+
+}
+
+.cartTab .listCart .item img {
+    width: 100%;
+    height: 20%; 
+    object-fit: cover;
+    border-radius: 10%;
+    margin: auto;
+    padding: auto;
+}
+
+.cartTab .listCart .item {
+    padding: 0 5px;
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listCart .quantity span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+}
+
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: black;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+.trash-icon {
+    cursor: pointer;
+    position: absolute;
+    bottom: 100px;
+    right: 10px;
+}
+.trash-icon svg {
+    width: 30px;
+}
+
+.clearCartIcon {
+    overflow: auto;
+}
+
+.total-price {
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    overflow: auto;
+}
+
+#totalPriceElement {
+    color: #333;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

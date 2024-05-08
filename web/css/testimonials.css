@@ -1,0 +1,86 @@
+
+
+    .containers {
+      max-width: 1170px;
+      margin: auto;
+      padding-top: 150px;
+      
+    }
+
+.contents {
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.item {
+    background-color: black;
+    width: 300px; /* Set a fixed width for each item */
+    margin: 0 auto; /* Center the items horizontally */ 
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: inset -1px -2px rgba(0,0,0,0.5);
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+      .img-area {
+          position: relative;
+          background-repeat: no-repeat;
+          overflow:  hidden;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin: auto;
+          border: 5px solid #fff;
+          box-shadow: inset 0 5px 10px rgba(0,0,0,0.1),
+                      inset 0 3px 6px rgba(0,0,0,0.5);
+        }
+
+    .img-area img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .text-content p {
+      line-height: 1.8;
+            padding-top: 20px;
+
+    }
+
+    .text-content h2 {
+      text-transform: uppercase;
+      font-weight: 600;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .owl-theme .owl-controls {
+      margin-top: 150px;
+      margin-left: 30px;
+    }
+
+    .owl-dots {
+      text-align: center;
+      margin-top: 3%;
+    }
+
+    .owl-dot {
+      display: inline-block;
+      height: 20px !important;
+      width: 20px !important;
+      background-color: #fff !important;
+      opacity: 0.8;
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+
+    @media (max-width: 991px) {
+      .container {
+        width: 100%;
+      }
+      .content {
+        width: auto;
+        padding: 30px 5px;
+      }
+    }

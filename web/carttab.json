@@ -1,0 +1,148 @@
+[
+
+    {
+        "id": 1,
+        "name":" Iced Vanilla Macchiato",
+        "price": 250,
+        "image": "/WakeUpCall/img/image/1.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Cold Brew Coffee",
+        "price": 250,
+        "image": "/WakeUpCall/img/image/2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Iced Americano",
+        "price": 290,
+        "image": "/WakeUpCall/img/image/3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Iced Caramel Latte",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Iced Caramel Macchiato",
+        "price": 300,
+        "image": "/WakeUpCall/img/image/5.jpg"
+    },
+    {
+        "id": 6,
+        "name":" Iced Coffee",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/6.jpg"
+    },
+    {
+        "id": 7,
+        "name":" Iced Hazelnut Coffee",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/7.jpg"
+    },
+    {
+        "id": 8,
+        "name":" Oreo Iced Coffee ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/8.jpg"
+    },
+    {
+        "id": 9,
+        "name":" Pumpkin Chai Latte ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/9.jpg"
+    },
+    {
+        "id": 10,
+        "name":" Black Coffee ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/10.jpg"
+    },
+    {
+        "id": 11,
+        "name":" Cappuccino  ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/11.jpg"
+    },
+    {
+        "id": 12,
+        "name":" Caramel Latte ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/12.jpg"
+    },
+    {
+        "id": 13,
+        "name":" Cortado  ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/13.jpg"
+    },
+    {
+        "id": 14,
+        "name":" Salted Vanilla Caramel Chai Latte  ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/14.jpg"
+    },
+    {
+        "id": 15,
+        "name":" Tiramisu latte coffee ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/15.jpg"
+    },
+    {
+        "id": 16,
+        "name":" Vanilla Latte ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/16.jpg"
+    },
+    {
+        "id": 17,
+        "name":" Extra thick and fluffy Japanese Pancakes ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/17.jpg"
+    },
+    {
+        "id": 18,
+        "name":" Berry Tarts ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/18.jpg"
+    },
+    {
+        "id": 19,
+        "name":" Cinnamon Roll ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/19.jpg"
+    },
+    {
+        "id": 20,
+        "name":" Crepes ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/20.jpg"
+    },
+    {
+        "id": 21,
+        "name":" Croissant ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/21.jpg"
+    },
+    {
+        "id": 22,
+        "name":" Eclairs ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/22.jpg"
+    },
+    {
+        "id": 23,
+        "name":" Macaron ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/23.jpg"
+    },
+    {
+        "id": 24,
+        "name":" Teacakes ",
+        "price": 200,
+        "image": "/WakeUpCall/img/image/24.jpg"
+    }
+
+]

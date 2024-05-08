@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
+
+
+.tcontainer {
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                background-color: orange;
+                
+            }
+            
+            .container {
+                width: 100%;
+            }
+            
+            .navbar {
+                font-weight: 500;
+                background-color: #FDF0D5;
+                align-items: center;
+            }
+            
+           .brand {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0px;
+        color: black;
+        text-decoration: none;
+          }
+            
+            .container a {
+                font-size: 40px;
+                font-weight: 600;
+                font-family: "Raleway", sans-serif;
+            }
+            
+            .navbar a:hover{
+                color: white;
+            }
+            
+            #icon {
+                padding-right: 5px;
+            }
+            
+            #example {
+                margin-top: 0;
+                                font-family: "Raleway", sans-serif;
+
+                padding-top: 0;
+            }
+            
+            .containertable {
+    margin-top: -50px; /* Adjust this value as needed */
+    white-space: nowrap;
+}
+            
+            /*table */
+#example {
+  width: 100%;
+}
+
+#example td, #example th {
+  padding: 12px; /* Adjust the padding value as needed */
+}
+
+/* Padding for table header cells */
+#example th, tfoot{
+  background-color: black; /* Background color for header cells */
+  color: white;
+    padding: 12px;
+}
+
+/* Padding for table body rows */
+#example tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Alternate row background color */
+}
+
+/* Remove border-collapse to prevent double borders */
+#example {
+  border-collapse: collapse;
+}
+
+@media (max-width: 991.98px) {
+  .sticky-top.navbar-dark {
+      position: relative;
+  }
+
+@media (min-width: 992px) {
+  .navbar-dark {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      background: transparent !important;
+  } 
+
+
