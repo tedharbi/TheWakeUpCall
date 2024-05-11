@@ -13,7 +13,6 @@
               crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Bootstrap JS -->
-        <script src="${pageContext.request.contextPath}/js/jquery-3.7.1.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/script.js"></script>
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 
@@ -213,6 +212,73 @@
                     closeModal(modalId);
                 });
             });
+            
+             /* FORM VALIDATION AND MODAL LOGIC */
+    $('.datepicker').datepicker({
+        format: 'mm-dd-yyyy',
+        autoclose: true
+    });
+
+    $("#registrationForm").submit(function (event) {
+        event.preventDefault();
+
+        const formData = {
+            username: $("#username").val(),
+            password: $("#password").val(),
+            confirmPassword: $("#confirmPassword").val(),
+            firstName: $("#firstName").val(),
+            lastName: $("#lastName").val(),
+            address: $("#address").val(),
+            birthday: $("#birthday").val(),
+            mobile: $("#mobile").val(),
+        };
+
+        if (!validateForm(formData))
+            return;
+        showAlert("Registration successful!", true);
+    });
+
+    function validateForm( { username, password, confirmPassword, firstName, lastName, address, mobile }) {
+        const usernameRegex = /^[a-zA-Z0-9]{4,12}$/;
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$&*])[A-Za-z\d!@#$&*]{8,16}$/;
+        const mobileRegex = /^\d{11}$/;
+
+        if (!usernameRegex.test(username)) {
+            showAlert("Username must be alphanumeric and have a length between 4 and 12 characters.");
+            return false;
+        }
+        if (!passwordRegex.test(password)) {
+            showAlert("Password must have between 8 and 16 characters, including at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.");
+            return false;
+        }
+        if (password !== confirmPassword) {
+            showAlert("Passwords do not match.");
+            return false;
+        }
+        if (firstName.length < 1) {
+            showAlert("First Name is required.");
+            return false;
+        }
+        if (lastName.length < 2) {
+            showAlert("Last Name must be at least 2 characters.");
+            return false;
+        }
+        if (address.length < 1) {
+            showAlert("Complete Address is required.");
+            return false;
+        }
+        if (!mobileRegex.test(mobile)) {
+            showAlert("Mobile number must have 11 digits.");
+            return false;
+        }
+        return true;
+    }
+
+    function showAlert(message, isSuccess = false) {
+        const modalId = isSuccess ? "#successModal" : "#errorModal";
+        $(modalId + " .modal-body").text(message);
+        $(modalId).modal('show');
+    }
         </script>
 
     </body>

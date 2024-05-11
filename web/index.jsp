@@ -76,7 +76,7 @@
                         </div>
                     </div>
                     <div class="tm-col-6">
-                        <h2 class=" tm-page-title">Welcome to <span class="heading"> <i class="fa-solid fa-mug-saucer" id="icon"></i>The Wake-Up Call  </span></h2> <br>
+                        <h2 class=" tm-page-title">Welcome to <span class="heading"> <br> <i class="fa-solid fa-mug-saucer" id="icon"></i>The Wake-Up Call  </span></h2> <br>
                         <p>
                             Our dedication to excellence never wavers. We make sure that every sip offers a rich and tasty experience by sourcing only the best beans from environmentally conscious farms all across the world. We aim for excellence at every stage of the production process, starting from the bean harvest and ending with the final pour.
                         </p>

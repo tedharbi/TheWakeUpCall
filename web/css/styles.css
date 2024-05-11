@@ -411,15 +411,21 @@
     width: 56%;
 }
 
-.heading {
-    text-decoration: underline black;
-    color: black;
-    font-weight: 600;
+.tm-col-6 h2 {
+    font-size: 23px;
 }
 
-p {
+.heading {
+    color: black;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.tm-col-6 p {
     color: black;
     font-weight: 400;
+    text-indent: 50px;
+    text-align: justify;
 }
 
 .parallax {

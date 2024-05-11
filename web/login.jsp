@@ -12,7 +12,6 @@
         <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.7.1.min.js"></script>
 
         <!-- JS BOOTSTRAP -->
-        <script src="${pageContext.request.contextPath}/js/jquery-3.7.1.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/script.js"></script>
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 

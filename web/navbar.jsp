@@ -45,7 +45,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link tm-nav-link" href="${pageContext.request.contextPath}/cart"
+            <a class="nav-link tm-nav-link" href="${pageContext.request.contextPath}/carttab"
               ><i class="fa-solid fa-cart-shopping"></i
             ></a>
           </li>

@@ -36,6 +36,10 @@
         <servlet-name>inventory</servlet-name>
         <servlet-class>ph.pup.itech.wucall.controller.inventory</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>carttab</servlet-name>
+        <servlet-class>ph.pup.itech.wucall.controller.carttab</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>li_su</servlet-name>
         <url-pattern>/LI-SU</url-pattern>
@@ -71,6 +75,10 @@
     <servlet-mapping>
         <servlet-name>inventory</servlet-name>
         <url-pattern>/inventory</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>carttab</servlet-name>
+        <url-pattern>/carttab</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

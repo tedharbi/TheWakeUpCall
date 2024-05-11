@@ -48,32 +48,29 @@
             }
             
             .containertable {
-    margin-top: -50px; /* Adjust this value as needed */
+    margin-top: -50px;
     white-space: nowrap;
 }
             
-            /*table */
+/*table */
 #example {
   width: 100%;
 }
 
 #example td, #example th {
-  padding: 12px; /* Adjust the padding value as needed */
+  padding: 12px; 
 }
 
-/* Padding for table header cells */
 #example th, tfoot{
-  background-color: black; /* Background color for header cells */
+  background-color: black; 
   color: white;
     padding: 12px;
 }
 
-/* Padding for table body rows */
 #example tbody tr:nth-child(odd) {
-  background-color: #f9f9f9; /* Alternate row background color */
+  background-color: #f9f9f9; 
 }
 
-/* Remove border-collapse to prevent double borders */
 #example {
   border-collapse: collapse;
 }
